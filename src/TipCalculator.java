@@ -22,10 +22,18 @@ public class TipCalculator
         double tipPerPerson = (tBill/people) * (tTip/100);
         double tPerPerson = (tBill/4) + tipPerPerson;
 
-        System.out.println("Total tip amount: "+ tipAmount);
-        System.out.println("Total bill including tip: "+ tTipBill);
-        System.out.println("Tip per person: "+ tipPerPerson);
-        System.out.println("Total per person: "+ tPerPerson);
+        System.out.print("Total tip amount: ");
+        System.out.printf("%.2f", tipAmount);
+        System.out.println();
+        System.out.print("Total bill including tip: ");
+        System.out.printf("%.2f", tTipBill);
+        System.out.println();
+        System.out.print("Tip per person: ");
+        System.out.printf("%.2f", tipPerPerson);
+        System.out.println();
+        System.out.print("Total per person: ");
+        System.out.printf("%.2f", tPerPerson);
+        System.out.println();
         System.out.println("-------------------------------");
 
     }
