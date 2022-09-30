@@ -20,7 +20,7 @@ public class TipCalculator
         double tipAmount = tBill*(tTip/100);
         double tTipBill = tBill + tipAmount;
         double tipPerPerson = (tBill/people) * (tTip/100);
-        double tPerPerson = (tBill/4) + tipPerPerson;
+        double tPerPerson = (tBill/people) + tipPerPerson;
 
         System.out.print("Total tip amount: ");
         System.out.printf("%.2f", tipAmount);
